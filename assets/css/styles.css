@@ -406,11 +406,13 @@ img {
 }
 
 .about__subtitle{
+  display: inline-flex;           /* * agar teks rapet antara atas dan bawah */
   font-size: var(--tiny-font-size);
 }
 
 .about__description{
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 /*=============== SKILLS ===============*/
@@ -434,7 +436,7 @@ img {
 }
 
 .skills__box{
-  display: flex;
+  display:flex;
   justify-content: center;
   column-gap: 2.5rem;
 }
