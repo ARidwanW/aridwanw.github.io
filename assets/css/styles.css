@@ -467,6 +467,26 @@ img {
   font-size: var(--tiny-font-size);
 }
 
+.skills__button{
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  column-gap: .25rem;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.skills__button:hover .skills__icon{
+  transform: translateX(.25rem);
+}
+
+.skills__icon{
+  font-size: 1rem;
+  transition: .4s;
+}
+
 /* TODO: lanjut di sini!! */
 
 /*=============== SERVICES ===============*/
