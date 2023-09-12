@@ -9,7 +9,7 @@ const scrollHeader = () =>{
 window.addEventListener('scroll', scrollHeader)
 
 // ? apa perbedaannya dengan di bawah ini 
-// * jika di atas tidak bisa maka coba yg bawa
+// * jika di atas tidak bisa maka coba yg bawah
 // function scrollHeader(){
 //     const header = document.getElementById('header')
 //     // When the scroll is greater than 50 viewport height,
