@@ -19,6 +19,29 @@ window.addEventListener('scroll', scrollHeader)
 // }
 // window.addEventListener('scroll', scrollHeader)
 
+/*=============== SKILLS MODAL ===============*/
+const modalViewsSkills = document.querySelectorAll('.skills__modal'),
+      modalBtnsSkills = document.querySelectorAll('.skills__button'),
+      modalCloseSkills = document.querySelectorAll('.skills__modal-close')
+
+let modalSkills = function(modalClickSkills){
+    modalViewsSkills[modalClickSkills].classList.add('active-modal')
+}
+
+modalBtnsSkills.forEach((mb, i) => {
+    mb.addEventListener('click', () =>{
+        modalSkills(i)
+    })
+})
+
+modalCloseSkills.forEach((mc) =>{
+    mc.addEventListener('click', () =>{
+        modalViewsSkills.forEach((mv) =>{
+            mv.classList.remove('active-modal')
+        })
+    })
+})
+
 /*=============== SERVICES MODAL ===============*/
 const modalViews = document.querySelectorAll('.services__modal'),
       modalBtns = document.querySelectorAll('.services__button'),
